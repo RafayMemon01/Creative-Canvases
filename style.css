@@ -12,6 +12,9 @@ color: #fff;
 }
 nav img{
     width: 5%;
+    border: 2px solid white;
+    border-radius: 25%;
+    /* color: #fff; */
 }
 nav{
     display: flex;
@@ -39,14 +42,20 @@ nav ul li a{
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 2em;
-    transition: tranform 2s;
+    transition: transform;
     }
-    nav ul li a:hover{
+    nav ul li a :hover{
         transform: scale(1.1);}
+
+        /* nav ul li:hover{
+                    transform: scale(1.1);
+
+        } */
 
 .content p{
     font-style: normal;
     text-align: center;
+    font-weight: bold;
 }
 .main{
     /* width: 450px; */
@@ -59,17 +68,36 @@ nav ul li a{
     width: 150px;
     height: 35px;
     font-size: 20px;
-    transition: tranform .50m;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #000;
-    color: #000;
+    transition: tranform .50s ease;
+    border: 1px solid #fff;
+    color: #fff;
     background-color: #fff;
+ background-color:    rgba(255, 44, 255, 1);
+
+ border-radius: 4px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+ 
     
 
 }
+.whatsappcontact{
+    position: fixed;
+    left: 92%;
+    
+    bottom: 2%;
+}
+.whatsappcontact img{
+    width: 50%;
+}
 .letsGo:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    background-color: transparent;
+    border: 1px solid pink;
+    color: pink;
+}
+.letsGo:active{
+    background-color: rgba(115, 255, 249, 1);
 }
 
 @media only screen and (max-width:525px){
@@ -78,3 +106,146 @@ nav ul li a{
     margin-right: 5%;
 }
 }
+.about{
+    margin-top: 25%;
+}
+@media only screen and (max-width:810px){
+  .letgplink{
+    margin-top: -13px;
+  }
+}
+@media only screen and (max-width:645px){
+  .btnnone{
+    display: none;
+  }
+  .iframe{
+    width: 90%;
+    height: 90%;
+    
+  }
+}
+@media only screen and (max-width:425px){
+  body p{
+    font-size: small;
+  }
+  nav ul li a{
+    font-size: small;
+  }
+}
+@media only screen and (max-width:353px){
+  body p{
+    font-size: .5rem;
+  }
+  body h1{
+    font-size: 1rem;
+  }
+  nav ul li a{
+    font-size: .6rem;
+  }
+  .letsGo{
+    margin-top: 25px;
+    width: 125px;
+    height: 25px;
+    font-size: small;
+    margin-bottom: 15px;
+  }
+
+}
+
+
+
+
+
+/* For WebKit browsers (Chrome, Safari, Opera) */
+   ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(252, 254, 73, 1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgba(255, 44, 255, 1), rgba(115, 255, 249, 1));
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, rgba(115, 255, 249, 1), rgba(255, 44, 255, 1));
+  }
+
+  
+  /* .letsGo {
+    margin-top: 5%;
+    background-color: rgba(252, 254, 73, 1);
+    color: pink;
+    padding: 10px 20px;
+    border: 1px solid pink;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .letsGo:hover {
+    background-color: rgba(255, 44, 255, 1);
+  }
+  
+  .letsGo:active {
+    background-color: rgba(115, 255, 249, 1);
+  } */
+  
+  
+  /* footer css 
+   */
+   footer {
+    background-color: rgba(252, 254, 73, 1);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  footer {
+    background-color: rgb(146, 252, 246);
+    color: #fff;
+    padding: 20px;
+    border: 1px solid white ;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+    
