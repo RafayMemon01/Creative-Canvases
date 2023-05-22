@@ -1,0 +1,6 @@
+.body {
+    background: rgb(115, 255, 249);
+    background: linear-gradient(90deg, rgba(115, 255, 249, 1) 26%, rgba(255, 44, 255, 1) 67%, rgba(252, 254, 73, 1) 80%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+}
