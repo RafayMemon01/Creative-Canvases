@@ -4,81 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Canvases</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <title>Creative Canvases - Creative Page</title>
+    <link rel="stylesheet" href="./canva.css">
 </head>
 
-<body>
-    <!-- <a class="whatsappcontact" href=""><img src="./images/whatsapplogo.png" alt=""></a> -->
+<body class="body">
     <nav>
-
-        <img href="./index.html" src="./images/logo.png" alt="">
-
-
         <ul>
-            <li>
-                <a href="index.html">Home</a>
-                <a href="#about">About</a>
-                <a href="https://rafaymemon01.github.io/Rafay-Memon/" target="_blank">Developer Contact</a>
-
-            </li>
+            <li><a href="../index.html"><button>Back</button></a></li>
+            <div class="second">
+                <li><a href="#"><button class="button" id="clear">Clear</button></a></li>
+                <li><a href="#"><button class="button" id="save">Save</button></a></li>
+            </div>
         </ul>
-        <a class="letgplink displaynone" href="./Drawing App/canva.html"><button type="button" class="letsGo btnnone">Let's Get Start</button></a>
     </nav>
-    <div class="main">
-        <div class="content">
-            <h1>Creative Canvases</h1>
-            <p><span >Creative Canvases playground—a blank digital</span> space where your ideas come
-                alive. Whether you're sketching
-                a
-                whimsical do<span style="color: rgba(115,255,249,1);">odle, designing a captivating</span> logo, or
-                simply exploring the world of abstract art, Creative
-                Canvases provides a platform for your artistic ex<span
-                    style="color: rgba(115,255,249,1);">ploration.</span></p>
-            <a  href="./Drawing App/canva.html"><button class="letsGo">Let's Get Start</button></a>
-            <iframe class="iframe" style="margin-top: 2%;" width="560"  height="315" src="https://www.youtube.com/embed/h9Cpvss1An4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="content about">
-            <h1 id="about">About Us</h1>
-            <p>Creative Canvases is an online platform dedicated to showcasing a diverse collection of artistic
-                creations. Inspired by the assignment given by the esteemed Sir Inzamam SMIT, this website aims to serve
-                as a creative hub where artists from all backgrounds can come together to share their unique visions on
-                the canvas.</p>
-            <p>
-                Our mission is to provide a space for artists to express themselves freely and authentically, pushing
-                the boundaries of their creativity. Through a wide range of styles, mediums, and subjects, Creative
-                Canvases seeks to captivate and inspire viewers, fostering a deeper appreciation for the world of art.
-            </p>
-            <p>
-                With a user-friendly interface, Creative Canvases allows visitors to navigate effortlessly through the
-                galleries, immersing themselves in the vibrant tapestry of colors, lines, and emotions. From intricate
-                pencil sketches to bold brushstrokes and digital masterpieces, there is something for every art
-                enthusiast to discover and appreciate.
-            </p>
-            <p>
-                Share your masterpieces with friends and family directly from the app or save them to your device for
-                future reference. You can even print your drawings and turn them into tangible works of art.
-            </p>
-            <p>
-                So, dive into the world of Creative Canvases and let your imagination run wild. Embrace the simplicity
-                of colors, shapes, and pens as you embark on a journey of self-expression and discovery.
-            </p>
-        </div>
+
+    <canvas id="canvas"></canvas>
+    <div class="nav">
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="red"></div>
+        <div class="clr" data-clr="orange"></div>
+        <div class="clr" data-clr="blue"></div>
+        <div class="clr" data-clr="purple"></div>
+        <div class="clr" data-clr="yellowgreen"></div>
+        <div class="clr" data-clr="yellow"></div>
+        <div class="clr" data-clr="#fff"></div>
+        <input type="color" value="#0000FF" id="favcolor">
+        <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10">
+        <!-- <div class="emoji"></div> -->
     </div>
-    <footer>
-        <div class="footer-content">
-          <div class="social-icons">
-            <a href="https://www.facebook.com/rafaymemon11" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/rafaymemon01" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/_rafay_memon/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/rafay-rashid-930190253/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <p class="footer-text">© 2023 Creative Canvases. All rights reserved.</p>
-        </div>
-      </footer>
-      
+    <script src="./canva.js" ></script>
 </body>
 
 </html>
