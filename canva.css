@@ -1,139 +1,142 @@
-.body {
-    /* background: rgb(115, 255, 249);
-    background: linear-gradient(90deg, rgba(115, 255, 249, 1) 26%, rgba(255, 44, 255, 1) 67%, rgba(252, 254, 73, 1) 80%); */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
-    /* display: block; */
-}
-
-#canvas{
-    width: 100%;
-    height: 100vh;
-    border:2px solid blue;
-}
-
-nav ul {
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #canvas {
+    width: calc(100% - 2em);
+    height: 80vh;
+    border: 2px solid blue;
+    touch-action: none;
+    margin: 1em;
+    margin-top: 3rem;
+  }
+  .clr:nth-child(1) {
+    background-color: #000;
+  }
+  .clr:nth-child(2) {
+    background-color: red;
+  }
+  .clr:nth-child(3) {
+    background-color: orange;
+  }
+  .clr:nth-child(4) {
+    background-color: blue;
+  }
+  .clr:nth-child(5) {
+    background-color: purple;
+  }
+  .clr:nth-child(6) {
+    background-color: yellowgreen;
+  }
+  .clr:nth-child(7) {
+    background-color: yellow;
+  }
+  .clr:nth-child(8) {
+    background-color: white;
+  }
+  
+  nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    /* margin: 0 2rem; */
-    margin: 0;
-    padding: 0;
-}
-.second{
+  }
+  
+  .second {
     display: flex;
-    /* justify-content: space-evenly; */
-}
-.second li{
-    /* margin-left: 2%;
-    margin-right:-2%; */
-}
-
-nav ul li a button {
-
-    /* margin-top: 25px; */
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a button,
+  nav ul li button {
     width: 120px;
     height: 25px;
     font-size: 16px;
     font-weight: bold;
-    transition: tranform .50s ease;
     border: 1px solid #fff;
     color: #fff;
-    background-color: #fff;
     background-color: rgba(255, 44, 255, 1);
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-nav ul li a button:hover {
-    /* transform: scale(1.1); */
+  }
+  
+  nav ul li a button:hover,
+  nav ul li button:hover {
     background-color: transparent;
     border: 1px solid pink;
     color: pink;
-}
-
-nav ul li a button:active {
+  }
+  
+  nav ul li a button:active,
+  nav ul li button:active {
     background-color: rgba(115, 255, 249, 1);
-}
-.nav{
-    width: auto;
-    height: 10.5%;
+  }
+  
+  .nav {
     position: fixed;
     top: 15%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    transition: opacity .5s;
+    flex-wrap: wrap;
+    align-items: center;
     background: linear-gradient(to bottom, rgba(255, 44, 255, 1), rgba(115, 255, 249, 1));
     padding: 10px;
     border-radius: 25px;
     border: 2px solid white;
     box-shadow: inset 2px white;
-}
-.nav div, button, input{
-    margin: .1rem;
-}
-.clr{
+    transition: opacity 0.5s;
+  }
+  
+  .nav div,
+  button,
+  input {
+    margin: 0.1rem;
+  }
+  
+  .clr {
     height: 2.5em;
     width: 2.5em;
     border-radius: 50%;
     background-color: #fff;
-    border: 3px solid rgba(252, 254, 73, 1) ;
-    transition: transform .5s;
-}
-.clr:hover{
+    border: 3px solid rgba(252, 254, 73, 1);
+    transition: transform 0.5s;
+  }
+  
+  .clr:hover {
     transform: scale(0.8);
-}
-.clr:nth-child(1){
-    background-color: #000;
-}
-.clr:nth-child(2){
-    background-color: red;
-}
-.clr:nth-child(3){
-    background-color: orange;
-}
-.clr:nth-child(4){
-    background-color: blue;
-}
-.clr:nth-child(5){
-    background-color: purple;
-}
-.clr:nth-child(6){
-    background-color: yellowgreen;
-}
-.clr:nth-child(7){
-    background-color: yellow;
-}
-.clr:nth-child(8){
-    background-color: white;
-}
-input[type="color"]{
+  }
+  
+  .active {
+    transform: scale(0.8);
+  }
+  
+  input[type="color"] {
     width: 60px;
     height: 40px;
     color: white;
-}
-#ageOutputId{
-    color: white;
-    font-weight: bold;
-    font-size: 15pt;
-}
-#ageInputId{
+  }
+  
+  #brushSize {
     background: linear-gradient(to right, #000428 0%, #004e92 100%);
-    height: 7px
-    ;
+    height: 7px;
     outline: none;
     -webkit-appearance: none;
-     cursor: ew-resize;
-     border-radius: 5px;
-     border: 3px solid white;
-     accent-color: white;
-}
+    cursor: ew-resize;
+    border-radius: 5px;
+    border: 3px solid white;
+    accent-color: white;
+  }
+  
