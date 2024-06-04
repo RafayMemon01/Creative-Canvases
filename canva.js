@@ -1,14 +1,15 @@
-const canvas = document.querySelector("#canvas");
-const ctx = canvas.getContext("2d");
-let isDrawing = false;
-let color = "green";
-let brushSize = 5;
+const canvas = document.querySelector("#canvas"),
+ctx = canvas.getContext("2d");
+let isDrawing = false,
+color = "green",
+brushSize = 5;
 
-const colorBoxes = Array.from(document.getElementsByClassName("clr"));
-const favColorInput = document.getElementById("favcolor");
-const brushSizeInput = document.getElementById("brushSize");
-const clearButton = document.getElementById("clear");
-const saveButton = document.getElementById("save");
+const colorBoxes = Array.from(document.getElementsByClassName("clr")),
+favColorInput = document.getElementById("favcolor"),
+bgColorInput = document.getElementById("bgcolor"),
+brushSizeInput = document.getElementById("brushSize"),
+clearButton = document.getElementById("clear"),
+saveButton = document.getElementById("save");
 
 // Set up color boxes
 colorBoxes.forEach((box) => {
@@ -22,6 +23,10 @@ colorBoxes.forEach((box) => {
 // Handle favorite color input
 favColorInput.addEventListener("input", () => {
   color = favColorInput.value;
+});
+// Handle background color input
+bgColorInput.addEventListener("input", () => {
+  canvas.style.backgroundColor = bgColorInput.value;
 });
 
 // Handle brush size input
@@ -84,3 +89,5 @@ saveButton.addEventListener("click", () => {
   link.href = canvas.toDataURL('image/png');
   link.click();
 });
+
+
